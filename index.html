@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folclore Nordestino - Bumba Meu Boi e Cordel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Crete+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>🌵 Folclore Nordestino 🥁</h1>
+        <p>A Riqueza das Lendas, Músicas e Tradições do Nordeste do Brasil</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#bumba-boi">Bumba Meu Boi</a></li>
+            <li><a href="#cordel">Literatura de Cordel</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="inicio" class="conteudo-secao">
+            <h2>Bem-vindo ao Sertão Cultural!</h2>
+            <p>O Nordeste é um caldeirão de culturas, com influências indígenas, africanas e europeias. Aqui, mergulharemos em duas de suas mais vibrantes expressões: o espetáculo do **Bumba Meu Boi** e a poesia popular da **Literatura de Cordel**.</p>
+            <div class="destaque-imagem">
+                [Imagem de Xilogravura Nordestina]
+            </div>
+        </section>
+
+        <section id="bumba-boi" class="conteudo-secao">
+            <h2>O Fascinante Bumba Meu Boi</h2>
+            <p>Uma das festas mais expressivas, especialmente no Maranhão, que mistura teatro, música e dança, contando a história dramática da morte e ressurreição de um boi.</p>
+            <article class="manifestacao">
+                <h3>A Lenda</h3>
+                <p>O vaqueiro Chico (ou Pai Francisco) mata o boi preferido do patrão para satisfazer o desejo de sua esposa grávida, Catirina, de comer a língua do animal. Ao descobrir o crime, o fazendeiro ameaça, mas o boi é misteriosamente ressuscitado. Essa história é celebrada com muita cor e ritmo!</p>
+            </article>
+            <article class="manifestacao">
+                <h3>Sotaques e Ritmos</h3>
+                <p>O Bumba Meu Boi possui vários "sotaques" (estilos) no Maranhão: Matraca, Pandeirão, Zabumba, Costa de Mão, etc., cada um com instrumentos e ritmos únicos.</p>
+                <button id="botao-bumba-boi" class="botao-interacao">Saiba Mais (Clique)</button>
+                <p id="info-bumba-boi" class="oculto"></p>
+            </article>
+        </section>
+
+        <section id="cordel" class="conteudo-secao">
+            <h2>A Poesia de Rua: Literatura de Cordel</h2>
+            <p>A Literatura de Cordel é uma poesia popular impressa em folhetos e exposta em cordas (cordéis). É a voz do povo, narrando fatos do cotidiano, lendas e aventuras em versos.</p>
+            <div class="galeria-cordel">
+                <div class="card-cordel">
+                    <h3>A Chegada de Lampião no Céu</h3>
+                    <p>Um clássico que satiriza a vida e a morte do cangaceiro.</p>
+                </div>
+                <div class="card-cordel">
+                    <h3>O Pavão Misterioso</h3>
+                    <p>Uma aventura épica e romântica em versos, com elementos fantásticos.</p>
+                </div>
+            </div>
+            <p>Para ler um trecho, <a href="#" onclick="mostrarTrechoCordel()">clique aqui</a>.</p>
+            <blockquote id="trecho-cordel" class="oculto">
+                "O sertão virou mar, / O mar virou sertão, / Isso só acontece / Com a força do trovão!"
+            </blockquote>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Folclore Nordestino | Criado com paixão e xote.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
