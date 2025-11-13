@@ -65,7 +65,9 @@ section {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: transform 0.2s ease;
+    scroll-margin-top: 120px; /* solução para o problema */
 }
+
 
 section:hover {
     transform: scale(1.01);
