@@ -6,6 +6,10 @@
 }
 
 /* ======== ESTILO GERAL ======== */
+html {
+    scroll-padding-top: 150px; /* AJUSTE PARA O MENU FIXO */
+}
+
 body {
     font-family: "Poppins", Arial, sans-serif;
     background-color: #fdf8f3;
@@ -65,9 +69,18 @@ section {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: transform 0.2s ease;
-    scroll-margin-top: 120px; /* solução para o problema */
+
+    /* Correção definitiva para a rolagem */
+    position: relative;
 }
 
+section::before {
+    content: "";
+    display: block;
+    height: 150px; /* altura igual ao espaço que o header ocupa */
+    margin-top: -150px;
+    visibility: hidden;
+}
 
 section:hover {
     transform: scale(1.01);
@@ -88,6 +101,24 @@ section p, section ul {
 
 section ul li {
     margin-bottom: 10px;
+}
+
+/* ======== BOTÃO VOLTAR ======== */
+.btn-voltar {
+    display: block;
+    width: max-content;
+    margin: 35px auto 0;
+    padding: 10px 18px;
+    background-color: #d96c06;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: #f2a007;
 }
 
 /* ======== RODAPÉ ======== */
